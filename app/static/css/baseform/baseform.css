@@ -1,0 +1,430 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 200173 */
+  src: url('//at.alicdn.com/t/font_lhl605763l9s5rk9.eot');
+  src: url('//at.alicdn.com/t/font_lhl605763l9s5rk9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_lhl605763l9s5rk9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_lhl605763l9s5rk9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_lhl605763l9s5rk9.svg#iconfont') format('svg');
+}
+
+.iconfontyyy{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+body{
+     font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","HeitiSC","WenQuanYi Micro Hei",sans-serif;
+    font-style: normal;
+}
+
+/*section{*/
+    /*margin-top: 100px;*/
+/*}*/
+
+.navbar-brand{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*nav{
+    background: black;
+}*/
+
+
+.main{
+    border: 1px solid lightgray;
+    padding: 0;
+    margin-top: 100px;
+    background-color: rgb(83,126,136);
+}
+
+
+.apply-status{
+    min-height: 160px;
+  /*background-color: #efefef;*/
+    /*padding-left: 15%;*/
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.status{
+    /*display: inline-block;*/
+    float: left;
+    width: 10%;
+    box-sizing: border-box;
+    opacity: 0.3;
+}
+
+.status-box{
+    width:100%;
+    /*status-box和status-intro对应*/
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.status-intro{
+    /*==status-icon的宽度*/
+    width:100%;
+    height: 30px;
+    line-height: 30px;
+    /*font-size: 20px;*/
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+
+
+.status-icon{
+  -webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    /*border: solid 0.1px black;*/
+    background-color:rgb(116,169,181);
+    text-align: center;
+    color: white;
+    display: inline-block;
+    /*opacity: 0.6;*/
+}
+
+.statusnow{
+    /*background-color: rgb(116,169,181);*/
+    opacity: 1;
+}
+
+.icon-num{
+    font-size: 30px;
+    /*50-padding(1*2)*/
+    line-height: 60px;
+    font-weight: lighter;
+    /*根据status-icon尺寸决定*/
+    margin: 0 auto;
+
+}
+
+
+
+.status-line-box{
+    /*display: inline-block;*/
+    /*display: inliine;*/
+    float: left;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100px;
+    /*padding-top: 40px;*/
+    /*background: red;*/
+    text-align: center;
+    opacity: 0.6;
+}
+.status-line{
+    height: 3px;
+    width: 90%;
+    background: white;
+    /*margin-left:auto ;*/
+    /*margin-top:auto;*/
+    display: inline-block;
+    margin-top: 45px;
+
+}
+
+
+
+
+/**********************/
+/* form */
+/**********************/
+
+.mainwidth{
+    width: 960px;
+    margin: 0 auto;
+    /*margin-left: 10%;*/
+}
+
+#mainform{
+    /*margin-top: 60px;*/
+    background: white;
+	/*width:1000px;*/
+    padding-top: 60px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 100px;
+}
+
+
+.nextbtn{
+    /*margin-left: 0;*/
+}
+
+#mainform .form-control{
+    border: 1px solid rgb(83,126,136);
+    border-radius: 2px;
+    /*display: inline-block;*/
+    max-width: 100%;
+    padding-left: 36px;
+}
+
+#mainform label{
+    font-weight: normal;
+    line-height: 34px;
+}
+
+#mainform i{
+    position: absolute;
+    line-height: 34px;
+    color: rgb(83,126,136);
+    margin-left: 10px;
+}
+
+#mainform .error{
+    color: red;
+}
+
+
+#mainform  .help-block{
+    line-height: 20px;
+    margin-top: -10px;
+    font-size: 12px;
+}
+
+/**********************/
+/* login button sytle */
+/**********************/
+
+
+.btn {
+  border:none;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+}
+
+/*.btn:focus {*/
+  /*background: rgb(83,126,136);*/
+  /*border-color: transparent;*/
+/*}*/
+
+.btn-success {
+  background: rgb(83,126,136);
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  /*margin-top: 26px;*/
+  margin: 20px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+
+.btn-success:hover {
+  background: #222;
+}
+
+
+
+
+/**********************/
+/* form sytle */
+/**********************/
+
+
+#mainform label{
+    display: block;
+}
+
+
+#mainform .form-left label{
+    text-align: right;
+}
+
+
+#mainform .form-group{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/**********************/
+/* form2 */
+/**********************/
+
+
+#mainform #form2 li{
+    /*display: inline;*/
+    /*margin-right: 40px;*/
+    line-height: 3rem;
+    letter-spacing: 1px;
+}
+
+#mainform #form2 label{
+    font-size: 22px;
+    color:rgb(83,126,136);
+}
+
+#mainform #form2 .help-block{
+    font-size: 14px;
+}
+
+#mainform #form2 .formsepline{
+    width: 80%;
+    height: 3px;
+    margin: 20px auto;
+   background: -webkit-linear-gradient(left, rgb(83,126,136) , white); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, rgb(83,126,136), white); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, rgb(83,126,136), white); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, rgb(83,126,136) , white); /* 标准的语法 */
+}
+
+
+
+/*#mainform #form2 li input[type=checkbox],#mainform li input[type=radio]{*/
+    /*margin-right: 15px;*/
+    /*line-height: inherit;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+.lb{
+    margin-left: 10px;
+}
+
+#pro-exp{
+    padding-left: 12px !important;
+}
+
+/*.prevbtn{*/
+    /*letter-spacing: 2px;*/
+    /*text-decoration: underline;*/
+    /*font-weight: 300;*/
+    /*padding: 10px 20px;*/
+    /*margin: 20px;*/
+    /*margin-left: 30px;*/
+    /*margin-bottom: 50px;*/
+/*}*/
+
+
+.upload-box{
+    border: 3px dashed #e6e6e6;
+    height: 80px;
+    width: 80px;
+  /*  min-height: 238px;*/
+    /*padding-top: 158px;*/
+    text-align: center;
+    background: url(../../icon/uploadpic.png) center  no-repeat;
+    background-size: 60%;
+    color: #cccccc;
+    position: relative;
+    border-radius: 10%;
+}
+
+
+
+
+/*loading*/
+.loader-mask{
+	z-index: 1000;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.4);
+}
+
+.loader-mask .loader-content{
+	 width: 500px;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 margin-left: -250px;
+	 margin-top: -80px;
+	 /*height: 160px;*/
+	 text-align: center;
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+
+  45% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0.7; }
+
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+
+  45% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0.7; }
+
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+
+
+.ball-pulse > div:nth-child(0) {
+  -webkit-animation: scale 0.75s 0s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: scale 0.75s 0s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.ball-pulse > div:nth-child(1) {
+  -webkit-animation: scale 0.75s 0.12s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: scale 0.75s 0.12s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.ball-pulse > div:nth-child(2) {
+  -webkit-animation: scale 0.75s 0.24s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: scale 0.75s 0.24s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.ball-pulse > div:nth-child(3) {
+  -webkit-animation: scale 0.75s 0.36s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: scale 0.75s 0.36s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.ball-pulse > div {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  display: inline-block;
+    background: rgb(83,126,126);
+    }
+
+#loader-upspan{
+    font-size: 24px;
+    color: rgb(83,126,136);
+    border: solid;
+    margin-top: 10px;
+}
+
+/**********************/
+/* waiting check    */
+/**********************/
+.waiting-check{
+    text-align: center;
+    color:  rgb(83,126,136);
+    padding-bottom: 60px;
+}
+
+
+.waiting-check h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

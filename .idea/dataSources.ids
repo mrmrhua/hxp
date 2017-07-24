@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - hxp@localhost" uuid="4440ffd3-58a5-4a85-aa7c-8f08d05b1f21">
+    <database-info product="MySQL" version="5.7.17" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="hxp"/>
+      <table id="2" parent="1" name="applyforms"/>
+      <table id="3" parent="1" name="applyworks"/>
+      <table id="4" parent="1" name="categories"/>
+      <table id="5" parent="1" name="historywork"/>
+      <table id="6" parent="1" name="milestones"/>
+      <table id="7" parent="1" name="projects"/>
+      <table id="8" parent="1" name="users"/>
+      <column id="9" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="10" parent="2" name="name">
+        <data-type>varchar(16)</data-type>
+      </column>
+      <column id="11" parent="2" name="sex">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="12" parent="2" name="born">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="13" parent="2" name="tel">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="14" parent="2" name="email">
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="15" parent="2" name="qq">
+        <data-type>varchar(16)</data-type>
+      </column>
+      <column id="16" parent="2" name="wx">
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="17" parent="2" name="school">
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="18" parent="2" name="major">
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="19" parent="2" name="graduate">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="20" parent="2" name="category_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="21" parent="2" name="project_text">
+        <data-type>text</data-type>
+      </column>
+      <column id="22" parent="2" name="blog_url">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="23" parent="2" name="unionid">
+        <data-type>varchar(64)</data-type>
+      </column>
+      <key id="24" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="25" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="26" parent="3" name="work_url">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="27" parent="3" name="apply_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="28" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="29" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="30" parent="4" name="category_name">
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="31" parent="4" name="apply_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="32" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="33" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="34" parent="5" name="work_url">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="35" parent="5" name="up_time">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="36" parent="5" name="milestone_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="37" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="38" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="39" parent="6" name="due_time">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="40" parent="6" name="de_status">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="41" parent="6" name="cl_status">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="42" parent="6" name="pro_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="43" parent="6" name="ordinpro">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="44" parent="6" name="due_time_cli">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="45" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="46" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="47" parent="7" name="password">
+        <data-type>varchar(6)</data-type>
+      </column>
+      <column id="48" parent="7" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="49" parent="7" name="milestone_num">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="50" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="51" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="52" parent="8" name="unionid">
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="53" parent="8" name="nickname">
+        <data-type>varchar(64)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="54" parent="8" name="applystatus">
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="55" parent="8" name="sex">
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="56" parent="8" name="headimg">
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="57" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
